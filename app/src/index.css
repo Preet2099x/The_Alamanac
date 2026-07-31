@@ -1,0 +1,64 @@
+:root {
+  --paper: #f3e6c8;
+  --ink: #170f08;
+  --text: #5b4128;
+  --muted: #8a6a3f;
+  --card: #fbf3df;
+  --border: #d8c7a0;
+  --shadow:
+    rgba(32, 21, 9, 0.18) 0 10px 20px -6px, rgba(32, 21, 9, 0.1) 0 4px 8px -3px;
+
+  --heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --body: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 19px/155% var(--body);
+  letter-spacing: 0.18px;
+  color: var(--text);
+  background: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 17px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+code {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--ink);
+  font-size: 15px;
+  padding: 4px 8px;
+  background: var(--card);
+}
